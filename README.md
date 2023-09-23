@@ -21,7 +21,7 @@ git clone https://github.com/Caerus-Chain/test-contract
 ```
 Navigate to the project folder:
 ```
-cd caerus-token
+cd test-contract
 ```
 Install dependencies:
 ```
