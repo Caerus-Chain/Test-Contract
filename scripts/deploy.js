@@ -14,3 +14,4 @@ main()
         console.error(error);
         process.exit(1);
     });
+// TestContract deployed to: 0xc454Babdc54De4a20AF355a95EC17C4B2Cef8D7f
