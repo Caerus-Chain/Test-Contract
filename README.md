@@ -10,9 +10,27 @@ The `TestContract` is designed to interact with Caerus's storage slots. It allow
 - Fetches the value of `slot0` at a specified block number.
 - Throws an error if the provided block number is greater than or equal to the current block number.
 
+## Prerequisites
+- **Node.js** v12+ LTS and npm (comes with Node)
+- **Hardhat**
+
+## Installation
+Clone the repository:
+```
+git clone https://github.com/Caerus-Chain/test-contract
+```
+Navigate to the project folder:
+```
+cd caerus-token
+```
+Install dependencies:
+```
+npm install
+```
+
 ## Set Up Configuration:
-1. Review the .example.env file.
-2. Create a .env file based on the example and adjust the values as needed.
+1. Review the `.example.env` file.
+2. Create a `.env` file based on the example and adjust the values as needed.
 
 For Linux or macOS:
 ```
@@ -23,11 +41,17 @@ For Windows:
 copy .example.env .env
 ```
 
-## Quick Start Guide
-### 1. Installation:
-Run `npm install` to install the necessary dependencies. Clone the repository to your local system.
+## Compilation
+Compile the smart contracts using Hardhat:
 ```
-npm install
+npx hardhat compile
+```
+
+## Quick Start Guide
+### 1. Testing
+Run the following command to execute the contract tests. Make sure you've written the tests in your Hardhat project's `test` directory.
+```
+npx hardhat test
 ```
 
 ### 2. Deployment:
@@ -43,12 +67,6 @@ npx hardhat run scripts/test.js --network caerus
 ```
 - Use the `setSlot0` function to change the value of `slot0`.
 - Use the `getSlot0` and `getSlot0Caerus` functions to fetch the value stored in `slot0`.
-
-### 4. Running Tests:
-Run the following command to execute the contract tests. Make sure you've written the tests in your Hardhat project's `test` directory.
-```
-npx hardhat test
-```
 
 ## Conclusion
 If you would like to contribute to the project, please fork the repository, make your changes, and then submit a pull request. We appreciate all contributions and feedback!
