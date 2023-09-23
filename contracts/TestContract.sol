@@ -61,7 +61,7 @@ contract TestContract {
     ) public pure returns (bytes32 result) {
         require(
             source.length <= 32,
-            "Source must be less than or equal to 32 bytes"
+            "TestContract::bytesToBytes32: Source must be less than or equal to 32 bytes"
         );
 
         // Explicitly convert each byte in the source to fill the bytes32
