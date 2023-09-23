@@ -1,12 +1,12 @@
 # TestContract
 The `TestContract` is designed to interact with Caerus's storage slots. It allows users to set and get a storage variable (`slot0`) and offers a method to fetch the storage value based on a historical block number.
 
-## Methods:
-### `setSlot0(uint256 _slot0)`
+### Methods:
+1. **setSlot0(uint256 _slot0)**
 - Sets the value of `slot0` to the provided integer `_slot0`.
-### `getSlot0()`
+2. **getSlot0()**
 - Returns the current value stored in `slot0`.
-### `getSlot0Caerus(uint256 blockNumber)`
+3. **getSlot0Caerus(uint256 blockNumber)**
 - Fetches the value of `slot0` at a specified block number.
 - Throws an error if the provided block number is greater than or equal to the current block number.
 
