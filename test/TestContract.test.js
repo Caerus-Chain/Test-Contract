@@ -9,7 +9,7 @@ describe("TestContract Smart Contract", function () {
         const TestContract = await ethers.getContractFactory("TestContract");
         testContract = await TestContract.deploy();
         await testContract.deployed();
-        console.log("testContract address:", testContract.address);
+        console.log("TestContract deployed to:", testContract.address);
     });
 
     it("should initially set and retrieve slot0 correctly to 42", async function () {
